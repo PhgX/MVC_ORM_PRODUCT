@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+  </head>
+  <body>
+    <form action="/create" method="POST" enctype="multipart/form-data">
+      <div>
+        <input type="text" name="name" id="name" placeholder="Nhap ten" />
+      </div>
+      <div>
+        <input type="number" name="price" id="price" placeholder="Nhap gia" />
+      </div>
+      <div>
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          placeholder="Nhap so luong"
+        />
+      </div>
+      <div>
+        <input type="file" name="image" id="image" placeholder="Up anh" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="Nhap ghi chu"
+        />
+      </div>
+      <button type="submit">Create</button>
+    </form>
+  </body>
+</html>
